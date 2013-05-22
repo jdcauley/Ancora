@@ -1,7 +1,6 @@
 <?php theme_include('header'); ?>
 
 <section>
-	<div class="container">
 		<div class="row">
 			<div class="span12">
 	<?php if(has_posts()): ?>
@@ -20,14 +19,14 @@
 						Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.
 					</footer>
 				</article>
+				<h3>Recent Posts</h3>
 			<?php $i = 0; while(posts()): $i++; ?>
 				<article class="wrap">
-					<h2>
+					<h4>
 						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					</h2>
+					</h4>
 				</article>
 			<?php endwhile; ?>
-		</ul>
 
 		<?php if(has_pagination()): ?>
 		<nav class="pagination">
@@ -43,7 +42,6 @@
 	<?php endif; ?>
 			</div>
 		</div>
-	</div>
 </section>
 
 <?php theme_include('footer'); ?>

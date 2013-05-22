@@ -1,7 +1,6 @@
 <?php theme_include('header'); ?>
 
 		<section id="article-<?php echo article_id(); ?>">
-			<div class="container">
 				<div class="row">
 					<div class="span12">
 			<h1><?php echo article_title(); ?></h1>
@@ -64,9 +63,8 @@
 					<?php echo comment_form_button(); ?>
 				</p>
 			</form>
-		</div>
-		<div>
-		</div>
+				</div>
+			<div>
 		</section>
 		<?php endif; ?>
 

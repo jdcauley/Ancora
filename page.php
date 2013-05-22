@@ -1,7 +1,6 @@
 <?php theme_include('header'); ?>
 
 		<section>
-			<div class="container">
 				<div class="row">
 					<div class="span12">
 			<h1><?php echo page_title(); ?></h1>
@@ -14,7 +13,6 @@
 			 -->
 					</div>
 				</div>
-			</div>
 		</section>
 
 <?php theme_include('footer'); ?>

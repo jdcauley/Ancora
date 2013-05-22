@@ -39,6 +39,7 @@
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
+			
 			<?php
 			$latestPostURL = base_url() . Registry::get('posts_page')->slug . '/' . latest_post()->data['slug'];
 			$latestPostLink = '<a
@@ -75,11 +76,15 @@
                         </ul>
                       </li>
                     </ul>
-                    <form class="navbar-search pull-right" action="<?php echo search_url(); ?>">
-                      <input type="text" class="search-query span2" placeholder="Search" value="<?php echo search_term(); ?>">
+                    <form class="navbar-search form-search pull-right" action="<?php echo search_url(); ?>" method="post">
+                    	<div class="input-append">
+                      	<input class="search-query input-medium" type="text" id="term" name="term" placeholder="<?php echo (search_term() ? search_term() : 'Search'); ?>">
+                      	<button type="submit" class="btn"><i class="icon-search"></i></button>
+                      </div>
                     </form>
                   </div><!-- /.nav-collapse -->
                 </div>
               </div><!-- /navbar-inner -->
             </div>
           </header>
+          <div class="container">
