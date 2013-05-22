@@ -1,0 +1,5 @@
+Theme name:    Ancora
+Description:   Baseline Bootstrap Theme
+Author name:   Jordan Cauley
+Author site:   
+License:       http://licence.visualidiot.com
