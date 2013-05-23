@@ -18,8 +18,10 @@
 		<![endif]-->
 
 		<script>var base = '<?php echo theme_url(); ?>';</script>
+		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script src="<?php echo theme_url('/assets/js/bootstrap.js'); ?>"></script>
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="viewport" content="width=device-width">
 	    <meta name="generator" content="Anchor CMS">
 
 	    <meta property="og:title" content="<?php echo site_name(); ?>">
@@ -33,6 +35,8 @@
 		    <!-- Custom CSS -->
     		<style><?php echo article_css(); ?></style>
 
+    		<!--  Custom Javascript -->
+    		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
 			
@@ -46,8 +50,8 @@
 		?>
 	</head>
 	<body class="<?php echo body_class(); ?>">
-					<header class="container">
-						<div class="navbar navbar-inverse" style="position: static;">
+					<header>
+						<div class="navbar navbar-static-top navbar-inverse">
               <div class="navbar-inner">
                 <div class="container">
                   <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
