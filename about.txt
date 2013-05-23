@@ -1,6 +1,6 @@
 Theme name:    Ancora
 Description:   Baseline Bootstrap Theme
 Author name:   Jordan Cauley
-Author site:   http://cauley.co
+Author site:   http://ancora.cauley.co
 License:       MIT License
 License URI:   http://opensource.org/licenses/MIT
