@@ -19,7 +19,10 @@
 	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 	<script src="<?php echo theme_url('/assets/js/bootstrap.js'); ?>"></script>
 	<script src="<?php echo theme_url('/assets/js/app.js'); ?>"></script>
-	
+	<!--  Custom Javascript -->
+    		<?php if(customised()): ?>
+    			<script><?php echo article_js(); ?></script>
+		<?php endif; ?>
 	     
     </body>
 </html>
