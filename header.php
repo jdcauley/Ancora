@@ -18,8 +18,6 @@
 		<![endif]-->
 
 		<script>var base = '<?php echo theme_url(); ?>';</script>
-		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-		<script src="<?php echo theme_url('/assets/js/bootstrap.js'); ?>"></script>
 
 	    <meta name="viewport" content="width=device-width">
 	    <meta name="generator" content="Anchor CMS">
