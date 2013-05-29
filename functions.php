@@ -56,13 +56,16 @@ function relative_time($date) {
 }
 
 function twitter_account() {
-	return site_meta('twitter', 'jdcauley');
+	return site_meta('twitter', '');
 }
 
 function twitter_url() {
 	return 'https://twitter.com/' . twitter_account();
 }
 
+function google_analytics() {
+	return site_meta('googleanalytics', '');
+}
 /*function latest_post($limit = 1) {
     if( ! $posts = Registry::get('latest_post')) {
         $posts = Post::where('status', '=', 'published')->sort('created', 'desc')->take($limit)->get();
