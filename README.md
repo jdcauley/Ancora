@@ -12,7 +12,7 @@ Custom Site Variables
     Value: username (no @)
   </li>
   <li>
-    Name: googleanalytics
+    Name: googleanalytics<br>
     Value: UA-xxxxxxxxx-x
   </li>
 </ol>
