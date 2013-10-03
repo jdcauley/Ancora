@@ -1,8 +1,8 @@
 <?php theme_include('header'); ?>
 
-<section>
+<section class="container">
 		<div class="row">
-			<div class="span12">
+			<div class="col-lg-12">
 	<?php if(has_posts()): ?>
 
 			<?php posts(); ?>

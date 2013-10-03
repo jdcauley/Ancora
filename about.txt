@@ -1,6 +1,6 @@
-Theme name:    Ancora
-Description:   Baseline Bootstrap Theme
+Theme name:    Ancora 2.0
+Description:   Bootstrap Baseline Theme
 Author name:   Jordan Cauley
-Author site:   http://ancora.cauley.co
+Author site:   http://jordancauley.com/ancora
 License:       MIT License
 License URI:   http://opensource.org/licenses/MIT

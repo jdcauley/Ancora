@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title><?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?></title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Anchor CMS">
 		<meta name="description" content="<?php echo site_description(); ?>">
 
-		<link rel="stylesheet" href="<?php echo theme_url('/assets/css/bootstrap.min.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/assets/css/bootstrap-responsive.min.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/assets/css/app.css'); ?>">
+		<link rel="stylesheet" href="<?php echo theme_url('/assets/css/main.min.css'); ?>">
 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
@@ -18,9 +17,6 @@
 		<![endif]-->
 
 		<script>var base = '<?php echo theme_url(); ?>';</script>
-
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="generator" content="Anchor CMS">
 
 	    <meta property="og:title" content="<?php echo site_name(); ?>">
 	    <meta property="og:type" content="website">
@@ -48,41 +44,45 @@
 		?>
 	</head>
 	<body class="<?php echo body_class(); ?>">
-					<header>
-						<div class="navbar navbar-static-top navbar-inverse">
-              <div class="navbar-inner">
-                <div class="container">
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </a>
-                  <a class="brand" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
-                  <div class="nav-collapse collapse navbar-inverse-collapse">
-                    <ul class="nav">
-                    	<?php if(has_menu_items()): ?>
-               				 <?php while(menu_items()): ?>
-												<li <?php echo (menu_active() ? 'class="active"' : ''); ?>><a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
-											 <?php endwhile; ?>
-											<?php endif; ?>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        	<?php while(categories()): ?>
-														<li><a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>"><?php echo category_title(); ?></a></li>
-													<?php endwhile; ?>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="navbar-search form-search pull-right" action="<?php echo search_url(); ?>" method="post">
-                    	<div class="input-append">
-                      	<input class="search-query input-medium" type="text" id="term" name="term" placeholder="<?php echo (search_term() ? search_term() : 'Search'); ?>">
-                      	<button type="submit" class="btn"><i class="icon-search"></i></button>
-                      </div>
-                    </form>
-                  </div><!-- /.nav-collapse -->
-                </div>
-              </div><!-- /navbar-inner -->
+	  <header>
+	    <nav class="navbar navbar-default" role="navigation">
+	      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
+        </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <?php if(has_menu_items()): ?>
+              <?php while(menu_items()): ?>
+            <li <?php echo (menu_active() ? 'class="active"' : ''); ?>><a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
+						  <?php endwhile; ?>
+            <?php endif; ?>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <?php while(categories()): ?>
+                <li><a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>"><?php echo category_title(); ?></a></li>
+                <?php endwhile; ?>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
             </div>
-          </header>
-          <div class="container">
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </header>

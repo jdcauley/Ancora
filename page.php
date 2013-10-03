@@ -1,8 +1,8 @@
 <?php theme_include('header'); ?>
 
-		<section>
+		<section class="container">
 				<div class="row">
-					<div class="span12">
+					<div class="col-lg-12">
 			<h1><?php echo page_title(); ?></h1>
 
 			<?php echo page_content(); ?>

@@ -3,7 +3,7 @@ Ancora
 
 A Baseline them for Anchor CMS using Bootstrap CSS
 
-[Demo Site](http://ancora.cauley.co)
+Demo Coming Soon
 
 Custom Site Variables
 <ol>
@@ -16,3 +16,11 @@ Custom Site Variables
     Value: UA-xxxxxxxxx-x
   </li>
 </ol>
+
+Grunt integrated
+
+cd ~/themes/ancora
+
+npm install
+
+grunt & grunt watch supported

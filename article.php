@@ -2,7 +2,7 @@
 
 		<section id="article-<?php echo article_id(); ?>">
 				<div class="row">
-					<div class="span12">
+					<div class="col-lg-12">
 			<h1><?php echo article_title(); ?></h1>
 
 			<article>
@@ -21,7 +21,7 @@
 		<section class="comments">
 			<div class="container">
 				<div class="row">
-					<div class="span12">
+					<div class="col-lg-12">
 			<?php if(has_comments()): ?>
 			<ul class="commentlist">
 				<?php $i = 0; while(comments()): $i++; ?>
